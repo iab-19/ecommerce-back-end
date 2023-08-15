@@ -6,10 +6,10 @@
 
   ## Description
   A back end application for an e-commerce website
-  ### User Stories
+  ### User Story
   AS A manager at an internet retail company  
   I WANT a back end for my e-commerce website that uses the latest technologies  
-  SO THAT my comany can compete with oter e-commerce companies
+  SO THAT my comany can compete with other e-commerce companies
 
   ### Acceptance Criteria
   GIVEN  functional Express.js API  
