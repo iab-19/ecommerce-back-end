@@ -3,12 +3,14 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
+
 router.get('/', async (req, res) => {
+  console.log("get on /api/categories received");
   // find all categories
   // be sure to include its associated Products
   try {
   const categoryData = await Category.findAll({
-    include: [product]
+    include: [Product]
   });
     res.status(200).json(categoryData);
   } catch (err) {
@@ -21,7 +23,8 @@ router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try {
-    const categoryData = await Location.findByPk(req.params.id, {
+
+    const categoryData = await Category.findByPk(req.params.id, {
       // JOIN with travellers, using the Trip through table
       include: [Product]
     });
@@ -52,8 +55,9 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+  console.log("put on /api/categories received id = ", req.params.id);
   try {
-    const categoryData = await category.update({
+    const categoryData = await Category.update(req.body,{
       where: {
         id: req.params.id
       }
