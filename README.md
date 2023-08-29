@@ -42,7 +42,16 @@
 
 
   ## Installation
-  tbd
+  Node.js, dotenv, express.js, mysql2, and sequelize packages are required to run this application.  
+  To run this application, follow these steps:
+  1. Put your mysql credentials in a .env file
+  2. Open a command line and run 'mysql -u root -p' and enter your password
+  3. Type 'SOURCE db/schema.sql' to create the database and tables
+  4. Type 'USE ecommerce_db' to select the database
+  5. Exit mysql
+  6. Run 'npm run seed' in the command line to populate the database
+  7. Run 'npm run watch' to start the server
+  8. Open Insomnia or any suitable REST API client to navigate the routes
 
   <!-- What are they steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
@@ -71,7 +80,7 @@
   industry standard, but you can always write your own.-->
 
   ## Tests
-  tbd
+  [![Link to walkthrough](https://drive.google.com/file/d/1xEtdq2piGnK0OvHRNENU9fK4u8MO3iJy/view)
 
   <!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
 
