@@ -80,7 +80,7 @@
   industry standard, but you can always write your own.-->
 
   ## Tests
-  [![Link to walkthrough](https://drive.google.com/file/d/1xEtdq2piGnK0OvHRNENU9fK4u8MO3iJy/view)
+  [Link to walkthrough](https://drive.google.com/file/d/1xEtdq2piGnK0OvHRNENU9fK4u8MO3iJy/view)
 
   <!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
 
